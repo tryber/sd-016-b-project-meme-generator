@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  font-size: 2.4rem;
+  background-color: rgb(227 , 243 , 237);
+}
+
+.header_gen {
+  width: 100%;
+  background-color: rgb(16 , 66 , 48);
+}
+
+.header_content {
+  display: flex;
+  width: 104rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_title {
+  color: rgb(228 , 235 , 233);
+  font-size: 5.8rem;
+  letter-spacing: 5px;
+  font-family: Bangers, cursive;
+}
+
+.header-img {
+  width: 70px;
+}
+
+.cont_sm {
+  width: 7rem;
+  text-align: center;
+}
+
+.container {
+  width: 104rem;
+  margin: 2.2rem auto 0;
+}
+
+.header_h3 {
+  color: rgb(71 , 212 , 172);
+  font-size: 1.8rem;
+}
+
+.header_h2 {
+  color: rgb(36 , 66 , 55);
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.head2_sec {
+  margin-bottom: 3.6rem;
+}
+
+.buttons_cont {
+  display: flex;
+  justify-content: center;
+}
+
+.mid-container {
+  width: 52rem;
+  margin: 5.8rem auto 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#text-input {
+  font-size: 2.2rem;
+  margin-left: 2.2rem;
+}
+
+#meme-insert {
+  font-size: 1.8rem;
+  margin-top: 2.2rem;
+}
+
+#meme-image {
+  width: 30rem;
+  height: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+}
+
+#meme-text {
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
+  color: white;
+  z-index: 300000;
+  position: absolute;
+  width: 30rem;
+}
+
+.meme_container {
+  width: 30rem;
+  height: 40rem;
+  border: 1px solid black;
+  margin: 2.2rem auto;
+  background-color: white;
+  box-sizing: content-box;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+button {
+  width: 9rem;
+  font-size: 2.2rem;
+  border-radius: 1rem;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+.img_container {
+  display: flex;
+  width: 50rem;
+  justify-content: space-between;
+  margin: 5rem auto;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  width: 10rem;
+  height: 15rem;
+  background-position: center;
+  background-size: cover;
+}
+
+#meme-1:hover , #meme-2:hover , #meme-3:hover , #meme-4:hover {
+  cursor: pointer;
+}
