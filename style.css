@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgreen;
+}
+
+#dados-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.dados {
+  display: flex;
+  margin: 0.25em 0;
+}
+
+#meme-text {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  text-shadow: black 5px 5px 5px;
+  width: max-content;
+}
+
+#meme-image-container {
+  margin: 0 auto;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  display: flex;
+}
+
+#meme-image {
+  width: 100%;
+}
+
+.memes {
+  margin: 0.5em auto;
+  width: 90px;
+  border-radius: 5px;
+}
+
+.padrao {
+  border: 1px black solid;
+}
+
+#fire {
+  background-color: red;
+}
+
+.fire {
+  border: 3px dashed red;
+}
+
+#water {
+  background-color: blue;
+}
+
+.water {
+  border: 5px double blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+.earth {
+  border: 6px groove green;
+}
+
+button {
+  border-style: none;
+  padding: 1em;
+  color: aliceblue;
+  border-radius: 6px;
+}
+
+/* Linha no final né linter */

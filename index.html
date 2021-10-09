@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="/favicon.png">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <h1>Meme Generator</h1>
+  <div id="dados-container">
+    <div class="dados">
+      <label for="text-input">Texto: </label>
+      <input type="text" maxlength="60" id="text-input"><br>
+    </div>
+    <div class="dados">
+      <label for="meme-insert">Foto: </label>
+      <input type="file" name="" id="meme-insert">
+    </div>
+  </div>
+  <div id='meme-image-container' class="padrao">
+    <img src="" alt="" id="meme-image">
+    <p id="meme-text"></p>
+  </div>
+  <br>
+  <button id="fire">Fire</button>  
+  <button id="water">Water</button>
+  <button id="earth">Earth</button>
+  <div>
+    <img id='meme-1' class='memes' src="./imgs/meme1.png" alt="Keanu da Conspiração">
+    <img id='meme-2' class='memes' src="./imgs/meme2.png" alt="Gato emburrado">
+    <img id='meme-3' class='memes' src="./imgs/meme3.png" alt="Jovem sucesso">
+    <img id='meme-4' class='memes' src="./imgs/meme4.png" alt="Caco">
+  </div>
+
+</body>
+<footer>Desenvolvido por Gabriel R. Leite - 2021</footer>
+<script src="/script.js"></script>
+</html>
+
+
+<!-- Não esquecendo da linha no fim do arquivo pra agradar o linter -->
