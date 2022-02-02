@@ -9,21 +9,30 @@ const secondImg = document.getElementById('meme-2');
 const thirdImg = document.getElementById('meme-3');
 const fourthImg = document.getElementById('meme-4');
 const output = document.getElementById('meme-image');
+const memeInsert = document.getElementById('meme-insert');
 
-function printText () {
+function printText() {
   if (photoText.value !== '') {
     memeText.innerText = photoText.value;
   }
 }
-photoText.addEventListener('keyup', printText);
 
+function addOutputSrc({ target }) {
+  if (target.src !== undefined) {
+    output.src = target.src;
+  }
+}
 // função loadFile retirada desse link, não entendi 100% dela, mas funcionou https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
-const loadFile = function (event) {
+const loadFile = (event) => {
   output.src = URL.createObjectURL(event.target.files[0]);
-  output.onload = function () {
+  output.onload = () => {
     URL.revokeObjectURL(output.src);
   };
 };
+
+photoText.addEventListener('keyup', printText);
+
+memeInsert.addEventListener('change', loadFile);
 
 fireButton.addEventListener('click', () => {
   imgContainer.className = 'fire';
@@ -37,30 +46,10 @@ earthButton.addEventListener('click', () => {
   imgContainer.className = 'earth';
 });
 
-firstImg.addEventListener('click', (event) => {
-  const targets = event.target;
-  if (targets.src !== undefined) {
-    output.src = targets.src;
-  }
-});
+firstImg.addEventListener('click', addOutputSrc);
 
-secondImg.addEventListener('click', (event) => {
-  const targets = event.target;
-  if (targets.src !== undefined) {
-    output.src = targets.src;
-  }
-});
+secondImg.addEventListener('click', addOutputSrc);
 
-thirdImg.addEventListener('click', (event) => {
-  const targets = event.target;
-  if (targets.src !== undefined) {
-    output.src = targets.src;
-  }
-});
+thirdImg.addEventListener('click', addOutputSrc);
 
-fourthImg.addEventListener('click', (event) => {
-  const targets = event.target;
-  if (targets.src !== undefined) {
-    output.src = targets.src;
-  }
-});
+fourthImg.addEventListener('click', addOutputSrc);

@@ -1,9 +1,10 @@
 #meme-image-container {
   max-width: 300px;
-  height: 400px;  
+  height: 400px;
   margin: 10px;
-  background-color: white;  
+  background-color: white;
   display: flex;
+  position: relative;
 }
 
 .first-border {
@@ -15,21 +16,21 @@
   height: 300px;
 }
 
-#meme-image {
-  position: absolute;
-  height: 400px;
-  width: 300px;
-  z-index: 2;
-  display: flex;
-}
-
 #meme-text {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
-  display: flex;  
+  display: flex;
+}
+
+#meme-image {
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  z-index: 1;
 }
 
 .fire {
